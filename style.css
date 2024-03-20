@@ -125,9 +125,13 @@ header {
 }
 
 .box-tecnologias {
-  width: 300px;
-  height: 250px;
-  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 180px;
+  padding: 1em;
   border-radius: 2em;
   box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
   margin: 0 auto;
@@ -139,11 +143,6 @@ header {
   text-transform: uppercase;
 }
 
-.tecnologias-box-texto {
-  color: var(--cinza);
-  text-align: start;
-}
-
 .img-tecnologias {
   width: 100px;
   aspect-ratio: 3/2;
@@ -151,7 +150,7 @@ header {
 }
 
 .swiper {
-  width: 90vw;
+  width: 70vw;
 }
 
 .swiper-slide {
@@ -226,4 +225,183 @@ header {
   aspect-ratio: 16/9;
   object-fit: contain;
   overflow: hidden;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  body {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  /* Header */
+
+  header {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .btn-header {
+    gap: 1rem;
+    padding: 0.5em 1.5em;
+  }
+  /* Fim Header */
+
+  /* Hero */
+
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .hero-content {
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .hero-titulo {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .hero-texto {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .img-hero {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .container-redes {
+    gap: 1em;
+    margin: 1rem 0;
+  }
+
+  .box-redes {
+    padding: 1em;
+    border-radius: 1rem;
+  }
+
+  .img-rede {
+    width: 25px;
+  }
+
+  .redes-texto {
+    display: none;
+  }
+
+  /* Fim Hero */
+
+  /* Tecnologias */
+
+  .tecnologias {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .tecnologias-titulo {
+    font-size: 2.5rem;
+  }
+
+  .tecnologias-texto {
+    font-size: 1.2rem;
+  }
+
+  .box-tecnologias {
+    width: 100px;
+    height: 100px;
+    border-radius: 1em;
+    margin: 0 auto;
+  }
+
+  .tecnologias-box-titulo {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .img-tecnologias {
+    width: 70px;
+  }
+
+  .swiper {
+    width: 90%;
+  }
+
+  /* Fim Tecnologias */
+
+  /* Projetos */
+
+  .projetos {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .projetos-titulo {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .projetos-texto {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  .container-box-projetos {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+  }
+
+  .box-projetos {
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    border-radius: 1em;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+  }
+
+  .box-projetos:hover {
+    transform: scale(1.05);
+  }
+
+  .projetos-box-texto {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .img-projetos {
+    height: 250px;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1500px) {
 }

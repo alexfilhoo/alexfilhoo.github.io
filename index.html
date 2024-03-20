@@ -13,7 +13,7 @@
   <body>
     <header>
       <img src="/AF-logos/AF-logos_black.png" alt="logo AF" class="logo" />
-      <a href="#" class="btn-header">
+      <a href="mailto:alex.cufars@gmail.com" class="btn-header">
         Contato
         <img src="/logos/icon-email.svg" alt="icon email" class="img-email" />
       </a>
@@ -81,10 +81,6 @@
                 class="img-tecnologias"
               />
               <h3 class="tecnologias-box-titulo">HTML</h3>
-              <p class="tecnologias-box-texto">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos,
-                consequuntur?
-              </p>
             </div>
           </div>
           <div class="swiper-slide">
@@ -95,10 +91,6 @@
                 class="img-tecnologias"
               />
               <h3 class="tecnologias-box-titulo">CSS</h3>
-              <p class="tecnologias-box-texto">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum,
-                perferendis.
-              </p>
             </div>
           </div>
           <div class="swiper-slide">
@@ -109,10 +101,6 @@
                 class="img-tecnologias"
               />
               <h3 class="tecnologias-box-titulo">JavaScript</h3>
-              <p class="tecnologias-box-texto">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum,
-                perferendis.
-              </p>
             </div>
           </div>
           <div class="swiper-slide">
@@ -123,10 +111,6 @@
                 class="img-tecnologias"
               />
               <h3 class="tecnologias-box-titulo">GIT</h3>
-              <p class="tecnologias-box-texto">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum,
-                perferendis.
-              </p>
             </div>
           </div>
           <div class="swiper-slide">
@@ -137,10 +121,6 @@
                 class="img-tecnologias"
               />
               <h3 class="tecnologias-box-titulo">NodeJS</h3>
-              <p class="tecnologias-box-texto">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum,
-                perferendis.
-              </p>
             </div>
           </div>
           <div class="swiper-slide">
@@ -151,10 +131,6 @@
                 class="img-tecnologias"
               />
               <h3 class="tecnologias-box-titulo">Kotlin</h3>
-              <p class="tecnologias-box-texto">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum,
-                perferendis.
-              </p>
             </div>
           </div>
         </div>
@@ -222,13 +198,17 @@
       const swiper = new Swiper(".swiper", {
         loop: true,
         slidesPerView: 4,
-        pagination: {
-          el: ".swiper-pagination",
-          type: "bullets",
-        },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+          },
+          1025: {
+            slidesPerView: 4,
+          },
         },
       });
     </script>
