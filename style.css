@@ -217,17 +217,14 @@ header {
   transform: scale(1.05);
 }
 
-.projetos-box-texto {
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
 .img-projetos {
-  height: 250px;
-  aspect-ratio: 16/9;
-  object-fit: contain;
-  overflow: hidden;
+  /* height: 250px;
+  object-fit: cover;
+  overflow: hidden; */
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -385,12 +382,6 @@ header {
 
   .box-projetos:hover {
     transform: scale(1.05);
-  }
-
-  .projetos-box-texto {
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: uppercase;
   }
 
   .img-projetos {
@@ -556,12 +547,6 @@ header {
 
   .box-projetos:hover {
     transform: scale(1.05);
-  }
-
-  .projetos-box-texto {
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: uppercase;
   }
 
   .img-projetos {
@@ -734,12 +719,6 @@ header {
 
   .box-projetos:hover {
     transform: scale(1.05);
-  }
-
-  .projetos-box-texto {
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: uppercase;
   }
 
   .img-projetos {
